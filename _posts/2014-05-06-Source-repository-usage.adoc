@@ -1,5 +1,7 @@
 = Source repository usage
+Wanjee
 :published_at: 2014-05-06
+:hp-tags: Quality, Drupal, Symfony2
 
 Topic of the day: Source repository usage
 
