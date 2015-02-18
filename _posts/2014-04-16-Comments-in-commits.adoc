@@ -1,4 +1,5 @@
 = Comments in commits
+:published_at: 2014-04-16
 
 Topic of the day: Comments in commits
 
