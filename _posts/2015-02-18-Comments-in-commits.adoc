@@ -1,0 +1,23 @@
+= Comments in commits
+
+Topic of the day: Comments in commits
+
+== What to do ?
+When you commit code changes please always add the related Jira ticket number in the comments.
+If it’s a bug fix you will always have a bugtracker ticket (if not: ask your Project Manager if any or create it yourself) and if it’s early stage development you should also always have a ticket (*if not*: ask your lead dev or create it yourself)
+
+A comment template will help readability so I would recommend you to always use the same pattern. i.e.:
+
+----
+"[PROJECT-42] Your explanations about what you change"
+----
+
+Note that explanations in your comment should help finding out what you did without the need of reading the whole code diff, so please be explicit.
+
+== Why it’s important ?
+* It greatly helps project maintenance by allowing you to find the context and reasons why a change was made
+* It helps structure your commits so one single commit is focused on a single change
+* It helps reverting code changes when changes are not ok
+* It takes no time
+* Helps for peer code reviews
+...
