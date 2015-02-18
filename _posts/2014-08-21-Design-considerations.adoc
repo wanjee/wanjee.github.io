@@ -1,0 +1,32 @@
+= Design considerations 
+:name: Wanjee
+:published_at: 2014-08-21
+:hp-tags: Quality, Drupal, Symfony2
+
+== What to do ?
+
+Polish all design elements.  As an example the error messages are often forgotten.  The message block is always the same but may receive additional classes depending on message status.  Each of those status class should receive proper theming.  The icons should also be adapted.
+
+If you meet some UI element that did not receive a proper theming discuss it with integrator.  If integrator has no appropriate design and need one ask a designer.
+
+If possible we should always have a design guidelines document.  A single page with the design of most elements we can retrieve on all website pages :
+
+
+* input text
+* radio buttons
+* checkbox
+* checkboxes
+* buttons
+* error messages
+* tabs
+* Bulleted lists
+* Numbered list
+* Heading 1 to 6
+* links
+* ...
+
+== Why it's important ?
+
+Improve quality feeling.  Give our clients a product that looks 100% finished.
+
+If you have a design guidelines document you will not have to ask yourself how to theme this or that.  You will be able to totally focus on clean code and clean stylesheet.
