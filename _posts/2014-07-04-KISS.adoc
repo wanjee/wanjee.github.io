@@ -1,0 +1,27 @@
+= KISS
+:name: Wanjee
+:published_at: 2014-07-04
+:hp-tags: Quality, Drupal, Symfony2
+
+
+== What to do ?
+
+* Use the simplest algorithm you can imagine
+* Use well known design pattern only if there is a real need for it.  Using patterns only to please your former teacher is never a good option.
+* Read what you just wrote, if you need to read your code twice to understand it you are most probably doing it wrong
+* If it's difficult for you to explain your solution to another developer you are most probably doing it wrong
+* Split difficult code into simple steps
+* Only write simple function, try to limit the size of a function to 10 lines max
+* If really you cannot find a simpler solution then comment your solution as much as possible.
+* KISS principle should apply on all layers on your work : functional analysis, technical analysis, code, user interface, web services interfaces, styling...
+* Simpler interface is simpler to implement
+* Doing simple things may be complicated if you don't have a clear view on what you want to apply so take the time to analyze the needs and the solution before starting development.  Your solution should be simple before you start coding, otherwise chance it will become simple are low.
+
+== Why it's important ?
+
+* Fast to understand is fast to fix.  Simple solutions are easy to write, understand, debug,…
+* Easy code is easier to test
+* Easy code is easier to refactor
+* A KISS UI should not require the need for documentation, end user will be able to understand by themselves.
+
+
