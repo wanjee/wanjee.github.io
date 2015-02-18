@@ -3,7 +3,7 @@
 :published_at: 2014-08-28
 :hp-tags: Quality, Drupal, Symfony2
 :url-internal-dry: http://wanjee.github.io/2014/08/07/DRY.html
-:url-internal-consistency: 
+:url-internal-consistency: http://wanjee.github.io/2014/08/14/Consistency-of-choices.html
 :url-internal-responsibility: http://wanjee.github.io/2014/06/26/Code-responsibility.html
 
 == What to do ?
@@ -12,4 +12,4 @@ We all know how the planning works.  We are often asked to develop new features 
 
 == Why it's important ?
 
-If you ask please read again issues about {url-internal-responsibility}[Code responsibility] and {url-internal-dry}[DRY].
+If you ask please read again issues about {url-internal-responsibility}[Code responsibility], {url-internal-consistency}[Consistency of choices] and {url-internal-dry}[DRY].
