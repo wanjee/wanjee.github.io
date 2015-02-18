@@ -1,5 +1,7 @@
 = Comments in commits
+Wanjee
 :published_at: 2014-04-16
+:hp-tags: quality
 
 Topic of the day: Comments in commits
 
