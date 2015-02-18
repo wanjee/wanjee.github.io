@@ -1,0 +1,29 @@
+= Code responsibility
+:name: Wanjee
+:published_at: 2014-06-26
+:hp-tags: Quality, Drupal, Symfony2
+
+== What to do ?
+
+You should always keep in mind that your code will be read, reviewed, maintained, fixed,… by others.  For that reason we have to speak a common language and be polite in our code.
+
+____
+"Politeness is best expressed as the practical application of good manners or etiquette."
+____
+
+You will be polite if you :
+
+* Write clean and explicit code (simple algorithms, explicit function names, explicit variable names,…)
+* Try to keep common practice inside a single project (i.e. always use the same method to define breadcrumbs, to name your fields,…).  Methods should be common to all our projects btw.
+* Document your code as if you were explaining it to the colleague sitting near you.  Real sentences, not keywords you will forget in few days.
+* Apply coding rules (indentation policy and new line chars are also part of this)
+* Avoid useless repetition of setup or deployment tasks: if you take 5 minutes to script the install/enable/update/disable/uninstall process of your module it will be 5 minutes spared to anyone that will have to also install it afterwards.
+* Make it easy to find code and bug fixes (See #1)
+* Even if you do not write test (we don't always have that as a priority even if we should) ensure your code is easily testable
+* ...
+
+== Why it's important ?
+
+* Everyone in the team will be more efficient working on your code if your code is properly done.  It includes you !  Knowing today how your code works does not mean that you will still now it next year.  So be polite to yourself also.
+* When writing code you are responsible for the maintenance of it.  Even if you will not do it yourself you have to ensure that your colleague will be efficient enough with it.   Ensure that he will not need ages to understand it, ensure the risk he brokes everything is as small as possible, ensure that he can rely on tests to have enough confidence in the change he made.
+* As usual, keep in mind that your colleagues are psychopaths and they probably will want to beat you if they think you are rude to them.  So get safe, be polite.
