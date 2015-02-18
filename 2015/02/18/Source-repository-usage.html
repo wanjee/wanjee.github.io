@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Source repository usage</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://wanjee.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="http://wanjee.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="http://wanjee.github.io/2015/02/18/Source-repository-usage.html" />
+    
+    <meta property="og:site_name" content="To quality and beyond" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Source repository usage" />
+    <meta property="og:description" content="Topic of the day: Source repository usage What to do ? Create a &quot;www&quot; folder in trunk root in which your project files will be located In &quot;www&quot; you should have nothing else than your project files and code (no db..." />
+    <meta property="og:url" content="http://wanjee.github.io/2015/02/18/Source-repository-usage.html" />
+    <meta property="article:published_time" content="2015-02-17T23:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-02-18T11:01:16.390Z" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Source repository usage" />
+    <meta name="twitter:description" content="Topic of the day: Source repository usage What to do ? Create a &quot;www&quot; folder in trunk root in which your project files will be located In &quot;www&quot; you should have nothing else than your project files and code (no db..." />
+    <meta name="twitter:url" content="http://wanjee.github.io/2015/02/18/Source-repository-usage.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "To quality and beyond",
+    "author": {
+        "@type": "Person",
+        "name": "",
+        "image": "https://avatars.githubusercontent.com/u/3372615?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": ""
+    },
+    "headline": "Source repository usage",
+    "url": "http://wanjee.github.io/2015/02/18/Source-repository-usage.html",
+    "datePublished": "2015-02-17T23:00:00.000Z",
+    "dateModified": "2015-02-18T11:01:16.390Z",
+    "description": "Topic of the day: Source repository usage What to do ? Create a &quot;www&quot; folder in trunk root in which your project files will be located In &quot;www&quot; you should have nothing else than your project files and code (no db..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="To quality and beyond" href="http://wanjee.github.io/rss" />
+</head>
+<body class="post-template">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="http://wanjee.github.io">Home</a>
+        <a class="subscribe-button icon-feed" href="http://wanjee.github.io/rss/">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Source repository usage</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-02-18">18 February 2015</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Topic of the day: Source repository usage</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_to_do">What to do ?</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Create a "www" folder in trunk root in which your project files will be located</p>
+</li>
+<li>
+<p>In "www" you should have nothing else than your project files and code (no db backup, no tmp folder,…)</p>
+</li>
+<li>
+<p>Custom code is separated from contrib one</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Drupal: modules/custom vs modules/contrib</p>
+<div class="ulist">
+<ul>
+<li>
+<p>sites/all/modules/contrib/&#8230;&#8203;</p>
+</li>
+<li>
+<p>sites/all/modules/custom/&#8230;&#8203; (even if we don&#8217;t use any contrib module)</p>
+</li>
+<li>
+<p>sites/all/themes/contrib/&#8230;&#8203;</p>
+</li>
+<li>
+<p>sites/all/themes/custom/&#8230;&#8203; (even if we don&#8217;t use any contrib theme)</p>
+</li>
+<li>
+<p>features are custom modules and should therefore also be located in /custom/ (NOT in features or whatever)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Symfony: src vs vendors</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Add all files that should not be versionned to the ignore list at the very beginning of the project.  See .gitignore examples (ignored files are also valid for SVN)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>All uppercased txt files from Drupal should not be deployed (CHANGELOG.txt, INSTALL.txt, INSTALL.mysql.txt, INSTALL.pgsql.txt, INSTALL.sqlite.txt, LICENSE.txt, MAINTAINERS.txt, UPGRADE.txt) Ignore them.</p>
+</li>
+<li>
+<p>Do not commit project files from your IDE or hidden files from your OS.  Ignore them as well.</p>
+</li>
+<li>
+<p>robots.txt and .htaccess files must be on SVN and deployed.</p>
+</li>
+<li>
+<p>install.php file is also not supposed to b deployed.  Ignore it.  Get it when needed and remove it afterwards.</p>
+</li>
+<li>
+<p>No backup files on repository ("backup", "old", "file_",…)</p>
+</li>
+<li>
+<p>Properly manage environment configuration.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Drupal: site/default/settings.php file should be ignored. Each environment settings file is defined in a the corresponding sub folder (i.e. sites/my_domain.com/settings.php)</p>
+</li>
+<li>
+<p>Symfony: define settings in parameters.yml.dist, never commit parameters.yml file that will be generated by composer.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_it_s_important">Why it&#8217;s important ?</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Source repositories will be used for automated deployments.  We want deployments to be as fast as possible so the lighter the code base is the faster our sites will deploy.</p>
+</li>
+<li>
+<p>We cannot deploy complete backup file of DB content to production.</p>
+</li>
+<li>
+<p>Backups on VCS has security implications.</p>
+</li>
+<li>
+<p>Other developers do not want a checkout to take ages.  If you want media files from production get them via FTP.</p>
+</li>
+<li>
+<p>A common structure is easier to use with scripts (code quality review, deploy,…) and easier to understand for developers.</p>
+</li>
+<li>
+<p>Source repository tools are meant to keep history of files so keeping old version of a file is a non sense and also a possible security issue.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/3372615?v=3)"><span class="hidden">'s Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href=""></a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Brussels, Belgium</span>
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Source%20repository%20usage&amp;url=http://wanjee.github.io/2015/02/18/Source-repository-usage.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://wanjee.github.io/2015/02/18/Source-repository-usage.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://wanjee.github.io/2015/02/18/Source-repository-usage.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="http://wanjee.github.io">To quality and beyond</a> &copy; 2015</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
+
+    <script type="text/javascript" src="http://wanjee.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="http://wanjee.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
