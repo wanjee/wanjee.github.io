@@ -1,0 +1,19 @@
+= Consistency of choices
+:name: Wanjee
+:published_at: 2014-08-14
+:hp-tags: Quality, Drupal, Symfony2
+
+
+== What to do ? 
+
+Carefully choose which modules you want to implement.  If you always use the same modules you will know them better.  You will know their advantages and disadvantages.  You will know how to use them properly. You will be more efficient with them.
+ 
+As an example if we already have a custom carousel solution it's probably better to reuse it (and improve it if required) instead of using another contributed one.  If we have an efficient breadcrumb management solution why trying to find another module that would do almost the same ?  If we need to be able to print pages from a button in the front-end it's better to use a small piece of javascript together with the print stylesheet instead of a module that will generate a print page and come with a lot of useless features.
+ 
+Discuss what was already done with your teammates, tell them which module you use.  If you feel stuck with one of the proposed solution discuss it with others, they probably already faced a similar issue.  Learn from the past and try to eliminate modules that was not effective enough in other projects.
+ 
+We should not have 5 different solutions for all problems.  We should have maximum 1 preferred and 1 backup solution, not more.   
+
+== Why it's important ? 
+
+Consistency of choices helps you and the team to be more efficient for development.  It will also help a lot for maintenance as it avoid maintainers the requirement to learn how works that new module he never heard about.  
