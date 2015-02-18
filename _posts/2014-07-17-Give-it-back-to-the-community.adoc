@@ -39,6 +39,6 @@ More info from the communities:
 * {url-drupal-contribute}[Drupal - Ways to get involved]
 * {url-symfony-contribute}[Symfony - Contributing]
 
-==Why it's important ?
+== Why it's important ?
 
 A community is built thanks to the guys building it.  Building something is the best way to learn exactly how it works.
