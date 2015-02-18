@@ -8,7 +8,7 @@
 
 == What to do ?
 
-Install (once for all your Drupal websites!) and use [url-drush](Drush)
+Install (once for all your Drupal websites!) and use {url-drush}[Drush]
 
 Use it for local tasks such as:
 
@@ -26,17 +26,17 @@ Use it for local tasks such as:
 
 Consider using drush help to get the complete list of available commands or drush @site_alias help for the commands related to a specific website.
 
-Consider using alias so you can execute Drush on a specific installation from everywhere on your computer.  See [url-drush-example](Drush examples) for more info about aliases.
+Consider using alias so you can execute Drush on a specific installation from everywhere on your computer.  See {url-drush-example}[Drush examples] for more info about aliases.
 
 Interesting global options:
 
 * -y : Assume 'yes' as answer to all prompts.  i.e.: drush updb -y
 * -d : Display even more information, including internal messages.
 * -ia : Force interactive mode for commands run on multiple targets (e.g. `drush @site1,@site2 cc --ia`).
-* -l <http://example.com:8888> : URI of the drupal site to use.  Required when working with multisite environments otherwise Drush will use the settings.php file it will find in sites/default
+* -l <URI of the drupal site>.  Required when working with multisite environments otherwise Drush will use the settings.php file it will find in sites/default
 
 
-You should also note that you can implement your own drush commands.  See Drush documentation and existing drush hooks implementations in well known contrib modules such as views or features.
+You should also note that you can implement your own drush commands.  See Drush documentation and existing drush  known contrib modules such as views or features.
 Why it's important ?
 
 * Once installed its faster than clicking your way through the admin backend
