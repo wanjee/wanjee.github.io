@@ -1,0 +1,46 @@
+= Use Drush !
+:name: Wanjee
+:published_at: 2014-05-31
+:hp-tags: Quality, Drupal
+:url-drush: https://drupal.org/project/drush
+:url-drush-example: http://drush.ws/examples/example.aliases.drushrc.php
+:url-safety-first: http://wanjee.github.io/2014/05/16/Commits-safety-first.html
+
+== What to do ?
+
+Install (once for all your Drupal websites!) and use [url-drush](Drush)
+
+Use it for local tasks such as:
+
+* Clear cache : cache-clear (alias: cc)
+* Execute update.php: updated (alias: updb)
+* Revert all your features: features-revert (alias: fr) or features-revert-all (alias: fra)
+* Update the code of your features: features-update (alias: fu) or features-update-all (alias: fua)
+* Download a contrib module: pm-download (alias: dl)
+* Enable a contrib module (and dependencies): pm-enable (alias: en)
+* Run tests: test-run
+* Backup code, files and DB into a single file: archive-dump (alias: ard)
+* Expand a site archive into a Drupal web site: archive-restore (alias: arg)
+* And the list goes on, and on, and on…
+
+
+Consider using drush help to get the complete list of available commands or drush @site_alias help for the commands related to a specific website.
+
+Consider using alias so you can execute Drush on a specific installation from everywhere on your computer.  See [url-drush-example](Drush examples) for more info about aliases.
+
+Interesting global options:
+
+* -y : Assume 'yes' as answer to all prompts.  i.e.: drush updb -y
+* -d : Display even more information, including internal messages.
+* -ia : Force interactive mode for commands run on multiple targets (e.g. `drush @site1,@site2 cc --ia`).
+* -l <http://example.com:8888> : URI of the drupal site to use.  Required when working with multisite environments otherwise Drush will use the settings.php file it will find in sites/default
+
+
+You should also note that you can implement your own drush commands.  See Drush documentation and existing drush hooks implementations in well known contrib modules such as views or features.
+Why it's important ?
+
+* Once installed its faster than clicking your way through the admin backend
+* It will be used by our deployment scripts
+* It will allow you to script (i.e. ant script in your IDE) the update of your code/db, the test execution,…
+* Remember [url-safety-first](Commits: safety first) ?  You <marquee><blink>have to</blink></marquee> revert all features, update your database and clear the cache each time you update your * code repository ! The faster the better so use : svn update; drush @site_alias far -y; drush @site_alias updb -y; drush @site_alias cc all;
+* We all love command line.  If not, it will start when using drush.
