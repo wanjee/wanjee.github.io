@@ -1,5 +1,5 @@
 = Everything in code !
-Wanjee
+:name: Wanjee
 :published_at: 2014-05-31
 :hp-tags: Quality, Drupal
 
