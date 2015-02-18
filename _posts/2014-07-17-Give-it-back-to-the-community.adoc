@@ -1,0 +1,44 @@
+= Give it back ! (to the community) 
+:name: Wanjee
+:published_at: 2014-07-17
+:hp-tags: Quality, Drupal, Symfony2
+:url-drupal-contribute: https://drupal.org/contribute
+:url-symfony-contribute: http://symfony.com/doc/current/contributing/index.html
+
+
+== What to do ?
+
+
+We take lots from the community:
+
+* frameworks: Drupal, Symfony, Zend Framework…
+* modules: Views, Features…
+* libraries: jQuery,…
+
+But we do not give something back so often and that's not really how a community should work.
+
+We could (and should) do the following for the community:
+
+Fast and easy part:
+
+* Report bugs and answer to related questions and remarks
+* Test and report test results of applied community patches
+* Test and report test results of alpha, beta and release candidate
+
+
+The following probably needs to be discussed internally (it involves intellectual property, code ownership and maintenance responsibility,…):
+
+* Contribute our custom developments
+* Help maintenance of existing contributed modules seeking for maintainer or co-maintainer
+* Write tests for existing modules/core
+* Take part to the discussions about core evolution
+
+
+More info from the communities:
+
+* {url-drupal-contribute}[Drupal - Ways to get involved]
+* {url-symfony-contribute}[Symfony - Contributing]
+
+==Why it's important ?
+
+A community is built thanks to the guys building it.  Building something is the best way to learn exactly how it works.
