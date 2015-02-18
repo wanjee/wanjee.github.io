@@ -1,0 +1,29 @@
+= Commits: safety first
+:published_at: 2014-05-16
+
+== What to do ?
+
+Almost all our projects currently rely on features.  This is good as features offers convenient methods to deploy DB changes programmatically (content types, fields,…).  The counterpart is that it's really easy to do something wrong with features.
+
+When working on code you should always work on the latest version.  With features you should also ensure that the DB match the latest version of code.  Please execute ALL the following steps on a regular basis (more than once a day!) and *at least each time you start modifying a feature !*
+
+* Update from source repository
+* Revert all features: to get in your DB all the changes committed by colleagues
+* Run update.php
+* Clear the cache
+* Start modifying the feature
+* Commit it : ALWAYS manually compare what you commit with the latest revision.
+
+Use Drush to go faster.
+
+There is no 100% sure method to avoid feature collisions when working simultaneously on the same feature.  The best way to prevent this is to speak with your colleagues working on the same project.   Try to synchronize together as most as possible.
+
+It also important to take care to commit only the changes you made.  If there is more you are probably overwriting a colleague's changes.  I can already tell that he will not like this. So please always read the diff before you commit code, this is valid for all your commits, whatever the project, framework, size of the change…
+
+Reading your changes before a commit also helps finding small issues (not translatable string, typo, forgotten debug statements…)
+
+== Why it's important ?
+
+If you apply changes on a not up to date feature SVN will not complain on commit and previous changes will be lost.  Source repository will complain only if you try to commit a file that is not properly updated but it will not complain if you commit a feature generated from deprecated DB (i.e. you did SVN update but no revert of the feature).
+
+As usual, keep in mind that your colleagues are psychopaths and will probably take revenge if their work "disappear" from source repository.
