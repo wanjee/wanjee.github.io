@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Commit messages - To quality and beyond</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Commit messages">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Commit messages">
+    <meta property="og:description" content="">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="http://wanjee.github.io/themes/uno/assets/css/uno.css?v=1.0.0" />
+
+    <link rel="canonical" href="http://wanjee.github.io/2014/04/22/Commit-messages.html" />
+    
+    <meta property="og:site_name" content="To quality and beyond" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Commit messages" />
+    <meta property="og:description" content="Topic of the day: Comments in commits What to do ? When you commit code changes please always add the related Jira ticket number in the comments. If it’s a bug fix you will always have a bugtracker ticket (if..." />
+    <meta property="og:url" content="http://wanjee.github.io/2014/04/22/Commit-messages.html" />
+    <meta property="article:published_time" content="2014-04-21T22:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-02-18T13:10:48.473Z" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Commit messages" />
+    <meta name="twitter:description" content="Topic of the day: Comments in commits What to do ? When you commit code changes please always add the related Jira ticket number in the comments. If it’s a bug fix you will always have a bugtracker ticket (if..." />
+    <meta name="twitter:url" content="http://wanjee.github.io/2014/04/22/Commit-messages.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "To quality and beyond",
+    "author": {
+        "@type": "Person",
+        "name": "",
+        "image": "https://avatars.githubusercontent.com/u/3372615?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": ""
+    },
+    "headline": "Commit messages",
+    "url": "http://wanjee.github.io/2014/04/22/Commit-messages.html",
+    "datePublished": "2014-04-21T22:00:00.000Z",
+    "dateModified": "2015-02-18T13:10:48.473Z",
+    "description": "Topic of the day: Comments in commits What to do ? When you commit code changes please always add the related Jira ticket number in the comments. If it’s a bug fix you will always have a bugtracker ticket (if..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="To quality and beyond" href="http://wanjee.github.io/rss" />
+
+</head>
+<body class="post-template no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed " >
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="http://wanjee.github.io" title="link to homepage for To quality and beyond"><img src="http://wanjee.be/blog/templates/wanjee/avatar.jpg" width="80" alt="To quality and beyond logo" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="http://wanjee.github.io" title="link to homepage for To quality and beyond">To quality and beyond</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">Quality focused small posts about PHP projects (Symfony, Drupal) and web development best practices in general.</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="/#blog" title="link to To quality and beyond blog" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+                  <!-- Twitter -->
+                  <li class="navigation__item">
+                    <a href="http://twitter.com/wanjee" title="Twitter account">
+                      <i class='icon icon-social-twitter'></i>
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+              
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="https://github.com/wanjee" title="Github account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  </li>
+              
+              
+              
+              
+                  <!-- LinkedIn -->
+                  <li class="navigation__item">
+                    <a href="http://be.linkedin.com/in/wanjee" title="LinkedIn account">
+                      <i class='icon icon-social-linkedin'></i>
+                      <span class="label">LinkedIn</span>
+                    </a>
+                  </li>
+              
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="22 Apr 2014" class="post-meta__date date">22 Apr 2014</time> &#8226; <span class="post-meta__tags tags"></span>
+        <span class="post-meta__author author"><img src="https://avatars.githubusercontent.com/u/3372615?v=3" alt="profile image for " class="avatar post-meta__avatar" /> by </span>
+      </div>
+      <h1 class="post-title">Commit messages</h1>
+    </header>
+
+    <section class="post">
+      <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Topic of the day: Comments in commits</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_to_do">What to do ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you commit code changes please always add the related Jira ticket number in the comments.
+If it’s a bug fix you will always have a bugtracker ticket (if not: ask your Project Manager if any or create it yourself) and if it’s early stage development you should also always have a ticket (<strong>if not</strong>: ask your lead dev or create it yourself)</p>
+</div>
+<div class="paragraph">
+<p>A comment template will help readability so I would recommend you to always use the same pattern. i.e.:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>"[PROJECT-42] Your explanations about what you change"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that explanations in your comment should help finding out what you did without the need of reading the whole code diff, so please be explicit.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_it_s_important">Why it’s important ?</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>It greatly helps project maintenance by allowing you to find the context and reasons why a change was made</p>
+</li>
+<li>
+<p>It helps structure your commits so one single commit is focused on a single change</p>
+</li>
+<li>
+<p>It helps reverting code changes when changes are not ok</p>
+</li>
+<li>
+<p>It takes no time</p>
+</li>
+<li>
+<p>Helps for peer code reviews
+&#8230;&#8203;</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+    </section>
+
+  </article>
+
+
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2015. All rights reserved.</span>
+                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
+                <span class="footer__copyright">Proudly published with <a href="http://hubpress.io" title="link to Hubpress website">Hubpress</a></span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
+
+    <script type="text/javascript" src="http://wanjee.github.io/themes/uno/assets/js/main.js?v=1.0.0"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-5555804-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
