@@ -1,5 +1,7 @@
 = Coder module
+Wanjee
 :published_at: 2014-04-23
+:hp-tags: Quality, Drupal
 
 == What to do ?
 
