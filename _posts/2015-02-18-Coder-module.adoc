@@ -18,7 +18,7 @@ Same for your theme:
 ----
 # Check all custom themes
 $ drush coder --minor --style --sql --security --i18n --druplart --no-empty [YOUR_DRUPAL_ROOT]/sites/all/themes/custom
------
+----
 
 
 Another interesting parameters are :
