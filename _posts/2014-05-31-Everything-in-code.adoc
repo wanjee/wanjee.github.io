@@ -1,0 +1,39 @@
+= Everything in code !
+Wanjee
+:published_at: 2014-05-31
+:hp-tags: Quality, Drupal
+
+== What to do ?
+
+A big problem in Drupal is that most of the configuration and DB structure is stored in the database.  This is a problem for deployment.  Therefore we should ensure following those steps:
+
+* Every single change should be in the code :
+** Content types
+** Fields
+** Views
+** Blocks location and display rules (via context)
+** Taxonomy vocabulary
+** Settings
+** Pathauto patterns
+** Permissions
+** Activation/deactivation of a module
+** …
+* Some things should not go in code. 
+** Content
+** and that's all.
+
+If you think something cannot be exported to the code discuss it with another developer.  Together you will try to find a solution and implement it for the current project and the next.
+
+If you need to click in the admin UI on production you are doing something wrong (currently accepted exceptions: update.php, revert of features, cache clearing)
+
+ 
+
+Use features module or implement hook_update()
+
+Features and hook_update() will both set value from the code to the database.  The main difference is that features will ensure these values do not change in time (they are reset after each feature revert, and therefore at least on each deploy).  So basically if the webmaster change something his changes will be lost on next deployment.  hook_update() will set the value but does not care if the value is changed afterwards.  So you will use features when there is no need for the client "webmaster" user to be able to change the values, use hook_update otherwise.
+Why it's important ?
+
+    Deployment should be a one step process: you click one button and the backup is done then the deployment.  We have to get prepared for this.
+    Changes done through the UI are not committed in source repository
+    Currently the developer will not always deploy his changes.  It's fine but the deployers do not want to follow step-by-step procedures to effectively deploy your fixes.
+    If all changes are in code the result of the deploy will be exactly the same on dev, staging and production. It ensures we improve quality of our deploys.
