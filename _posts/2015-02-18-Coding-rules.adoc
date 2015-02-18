@@ -1,0 +1,17 @@
+= Coding rules 
+
+== What to do ?
+
+Whatever the framework or CMS we use we will apply the coding standards provided by their developers.
+
+* Drupal: http://drupal.org/coding-standards
+* Symfony: http://symfony.com/doc/master/contributing/code/standards.html
+* Other PHP libraries: http://www.php-fig.org/psr/psr-2/
+
+
+
+So depending on the project you work on you should configure your IDE or text editor properly.  In Eclipse you can work with 2 distinct workspaces (Drupal and Symfony) with their respective settings.  In PHPStorm you can set your project coding rules by loading predefined styles.
+
+== Why it's important ?
+
+We all speak the same language but we use different dialects.  We should share same language and dialect to ease code readability, maintainability, efficiency,…
