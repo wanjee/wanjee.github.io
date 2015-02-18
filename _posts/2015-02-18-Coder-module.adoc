@@ -1,0 +1,34 @@
+= Coder module
+
+
+== What to do ?
+
+
+First install and enable the coder module on your dev environment.  This module should be packaged in your site codebase so that automated testing can use it but they should not be active on staging or production.
+
+Then run it from Drupal backend or (more efficient) via Drush on all custom modules code with the following command:
+----
+# Check all custom code
+$ drush coder --minor --style --sql --security --i18n --druplart --no-empty [YOUR_DRUPAL_ROOT]/sites/all/modules/custom
+----
+
+
+Same for your theme:
+
+----
+# Check all custom themes
+$ drush coder --minor --style --sql --security --i18n --druplart --no-empty [YOUR_DRUPAL_ROOT]/sites/all/themes/custom
+-----
+
+
+Another interesting parameters are :
+
+* *--reviews=all* : combines --style --sql --security --i18n --druplart and add some more like --upgrade7x  --upgrade8x
+* *--no-empty* : hide empty results (when no problems are detected)
+* *--sniffer* :  run the PHP CodeSniffer review
+
+== Why it's important ?
+
+Coder ensures you speak the dialect we all speak, it will also help detecting possible flaws in your code and it's always better to find problems before the client.  To become fluent in a language we need a bit of practice, this module will greatly help.
+
+Coder check will also be added as an automatic task to validate the quality of a project before we can push it to staging or production.  If expected quality is not met the release will not be possible.
