@@ -1,0 +1,15 @@
+= Ask lead dev first ! 
+:name: Wanjee
+:published_at: 2014-08-28
+:hp-tags: Quality, Drupal, Symfony2
+:url-internal-dry: http://wanjee.github.io/2014/08/07/DRY.html
+:url-internal-consistency: 
+:url-internal-responsibility: http://wanjee.github.io/2014/06/26/Code-responsibility.html
+
+== What to do ?
+
+We all know how the planning works.  We are often asked to develop new features or fix bugs on project we do not start.  Problem is that we therefore do not know how those projects foundations are and we make assumptions.  If the assumptions are not correct we will have problems.  Take the time to verify your assumptions and to submit your solutions ideas with the lead dev.  He is probably busy on another project but should be able to give you 5 minutes of his time.  He gets the whole picture about the project, you don't (yet), so learn from him. 
+
+== Why it's important ?
+
+If you ask please read again issues about {url-internal-responsibility}[Code responsibility] and {url-internal-dry}[DRY].
