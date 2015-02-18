@@ -1,0 +1,24 @@
+= DRY
+:name: Wanjee
+:published_at: 2014-08-07
+:hp-tags: Quality, Drupal, Symfony2
+
+== Don't repeat yourself !
+
+____
+"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."
+____
+
+== Why it's important ?
+
+You do not want to write 2 times the code necessary to achieve one single result.  If the first function you wrote doesn't meet your new needs you should think twice about your needs and how they are formulated.
+
+You should use functions instead of repeating your code.  This way you can test your code more easily, you get more confidence in your code, you can refactor your functions without impact on logically unrelated elements.  
+
+
+
+It's also valid for deployments.  You don't want to click multiple times in admin UI to activate and configure some modules or create some blocks on all environments.  Instead you will write deployment code once and let the system deploy your stuff for you on all environments.
+
+ 
+
+Laziness is the key here.
