@@ -1,7 +1,7 @@
 = Commit messages
 Wanjee
 :published_at: 2014-04-22
-:hp-tags: quality
+:hp-tags: Quality
 
 Topic of the day: Comments in commits
 
