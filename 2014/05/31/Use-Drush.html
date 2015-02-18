@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Use Drush ! - To quality and beyond</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Use Drush !">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Use Drush !">
+    <meta property="og:description" content="">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="http://wanjee.github.io/themes/uno/assets/css/uno.css?v=1.0.0" />
+
+    <link rel="canonical" href="http://wanjee.github.io/2014/05/31/Use-Drush.html" />
+    
+    <meta property="og:site_name" content="To quality and beyond" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Use Drush !" />
+    <meta property="og:description" content="What to do ? Install (once for all your Drupal websites!) and use [url-drush](Drush) Use it for local tasks such as: Clear cache : cache-clear (alias: cc) Execute update.php: updated (alias: updb) Revert all your features: features-revert (alias: fr) or..." />
+    <meta property="og:url" content="http://wanjee.github.io/2014/05/31/Use-Drush.html" />
+    <meta property="article:published_time" content="2014-05-30T22:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-02-18T17:34:47.857Z" />
+    <meta property="article:tag" content="Quality" />
+    <meta property="article:tag" content="Drupal" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Use Drush !" />
+    <meta name="twitter:description" content="What to do ? Install (once for all your Drupal websites!) and use [url-drush](Drush) Use it for local tasks such as: Clear cache : cache-clear (alias: cc) Execute update.php: updated (alias: updb) Revert all your features: features-revert (alias: fr) or..." />
+    <meta name="twitter:url" content="http://wanjee.github.io/2014/05/31/Use-Drush.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "To quality and beyond",
+    "author": {
+        "@type": "Person",
+        "name": "",
+        "image": "https://avatars.githubusercontent.com/u/3372615?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": ""
+    },
+    "headline": "Use Drush !",
+    "url": "http://wanjee.github.io/2014/05/31/Use-Drush.html",
+    "datePublished": "2014-05-30T22:00:00.000Z",
+    "dateModified": "2015-02-18T17:34:47.857Z",
+    "keywords": "Quality,  Drupal",
+    "description": "What to do ? Install (once for all your Drupal websites!) and use [url-drush](Drush) Use it for local tasks such as: Clear cache : cache-clear (alias: cc) Execute update.php: updated (alias: updb) Revert all your features: features-revert (alias: fr) or..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="To quality and beyond" href="http://wanjee.github.io/rss" />
+
+</head>
+<body class="post-template tag-undefined tag-undefined no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed " >
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="http://wanjee.github.io" title="link to homepage for To quality and beyond"><img src="http://wanjee.be/blog/templates/wanjee/avatar.jpg" width="80" alt="To quality and beyond logo" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="http://wanjee.github.io" title="link to homepage for To quality and beyond">To quality and beyond</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">Quality focused small posts about PHP projects (Symfony, Drupal) and web development best practices in general.</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="/#blog" title="link to To quality and beyond blog" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+                  <!-- Twitter -->
+                  <li class="navigation__item">
+                    <a href="http://twitter.com/wanjee" title="Twitter account">
+                      <i class='icon icon-social-twitter'></i>
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+              
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="https://github.com/wanjee" title="Github account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  </li>
+              
+              
+              
+              
+                  <!-- LinkedIn -->
+                  <li class="navigation__item">
+                    <a href="http://be.linkedin.com/in/wanjee" title="LinkedIn account">
+                      <i class='icon icon-social-linkedin'></i>
+                      <span class="label">LinkedIn</span>
+                    </a>
+                  </li>
+              
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="31 May 2014" class="post-meta__date date">31 May 2014</time> &#8226; <span class="post-meta__tags tags">on <a href="http://wanjee.github.io/tag/Quality">Quality</a>, <a href="http://wanjee.github.io/tag/ Drupal"> Drupal</a></span>
+        <span class="post-meta__author author"><img src="https://avatars.githubusercontent.com/u/3372615?v=3" alt="profile image for " class="avatar post-meta__avatar" /></span>
+      </div>
+      <h1 class="post-title">Use Drush !</h1>
+    </header>
+
+    <section class="post tag-undefined tag-undefined">
+      <div class="sect1">
+<h2 id="_what_to_do">What to do ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Install (once for all your Drupal websites!) and use [url-drush](Drush)</p>
+</div>
+<div class="paragraph">
+<p>Use it for local tasks such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Clear cache : cache-clear (alias: cc)</p>
+</li>
+<li>
+<p>Execute update.php: updated (alias: updb)</p>
+</li>
+<li>
+<p>Revert all your features: features-revert (alias: fr) or features-revert-all (alias: fra)</p>
+</li>
+<li>
+<p>Update the code of your features: features-update (alias: fu) or features-update-all (alias: fua)</p>
+</li>
+<li>
+<p>Download a contrib module: pm-download (alias: dl)</p>
+</li>
+<li>
+<p>Enable a contrib module (and dependencies): pm-enable (alias: en)</p>
+</li>
+<li>
+<p>Run tests: test-run</p>
+</li>
+<li>
+<p>Backup code, files and DB into a single file: archive-dump (alias: ard)</p>
+</li>
+<li>
+<p>Expand a site archive into a Drupal web site: archive-restore (alias: arg)</p>
+</li>
+<li>
+<p>And the list goes on, and on, and on…</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Consider using drush help to get the complete list of available commands or drush @site_alias help for the commands related to a specific website.</p>
+</div>
+<div class="paragraph">
+<p>Consider using alias so you can execute Drush on a specific installation from everywhere on your computer.  See [url-drush-example](Drush examples) for more info about aliases.</p>
+</div>
+<div class="paragraph">
+<p>Interesting global options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>-y : Assume 'yes' as answer to all prompts.  i.e.: drush updb -y</p>
+</li>
+<li>
+<p>-d : Display even more information, including internal messages.</p>
+</li>
+<li>
+<p>-ia : Force interactive mode for commands run on multiple targets (e.g. <code>drush @site1,@site2 cc --ia</code>).</p>
+</li>
+<li>
+<p>-l <a href="http://example.com:8888" class="bare">http://example.com:8888</a> : URI of the drupal site to use.  Required when working with multisite environments otherwise Drush will use the settings.php file it will find in sites/default</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You should also note that you can implement your own drush commands.  See Drush documentation and existing drush hooks implementations in well known contrib modules such as views or features.
+Why it&#8217;s important ?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Once installed its faster than clicking your way through the admin backend</p>
+</li>
+<li>
+<p>It will be used by our deployment scripts</p>
+</li>
+<li>
+<p>It will allow you to script (i.e. ant script in your IDE) the update of your code/db, the test execution,…</p>
+</li>
+<li>
+<p>Remember [url-safety-first](Commits: safety first) ?  You &lt;marquee&gt;&lt;blink&gt;have to&lt;/blink&gt;&lt;/marquee&gt; revert all features, update your database and clear the cache each time you update your * code repository ! The faster the better so use : svn update; drush @site_alias far -y; drush @site_alias updb -y; drush @site_alias cc all;</p>
+</li>
+<li>
+<p>We all love command line.  If not, it will start when using drush.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+    </section>
+
+  </article>
+
+
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2015. All rights reserved.</span>
+                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
+                <span class="footer__copyright">Proudly published with <a href="http://hubpress.io" title="link to Hubpress website">Hubpress</a></span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
+
+    <script type="text/javascript" src="http://wanjee.github.io/themes/uno/assets/js/main.js?v=1.0.0"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-5555804-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
