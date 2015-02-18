@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "wanjee",
-    "repositoryName": "wanjee.github.io",
-    "branch": "master"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"wanjee","repositoryName":"wanjee.github.io","branch":"master"},"site":{"url":"http://wanjee.github.io"},"socialnetwork":{},"theme":{"name":"Casper","url":"http://wanjee.github.io/themes/Casper"}}
