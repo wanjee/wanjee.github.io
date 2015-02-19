@@ -1,7 +1,7 @@
 = Code metrics 
 :name: Wanjee
 :published_at: 2014-12-30
-:hp-tags: Quality, Drupal, Symfony2
+:hp-tags: Quality,Drupal,Symfony2
 :url-phpmetrics: https://share.emakina.net/display/PHP/PhpMetrics
 :url-phpcpd: https://github.com/sebastianbergmann/phpcpd
 :url-phpdepend: http://pdepend.org/
