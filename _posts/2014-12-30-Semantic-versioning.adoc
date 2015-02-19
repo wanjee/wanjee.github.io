@@ -1,0 +1,29 @@
+= Semantic versioning 
+:name: Wanjee
+:published_at: 2014-12-30
+:hp-tags: Quality,Drupal,Symfony2
+:url-semver: http://semver.org/
+
+
+Semantic versioning is a scheme for release version number.
+
+== What should you do ?
+
+Use semantic versioning for all project releases, libraries, modules.  Rules are the following:
+
+* A version number is basically 3 numbers separated by dots
+* Numbers have a meaning : MAJOR.MINOR.PATCH
+* You should increment numbers when
+** MAJOR : when you break backwards-compatibility or add major features
+** MINOR : when you add minor features
+** PATCH : when you bugfix/hotfix
+* Before first production release use 0.MINOR.PATCH as scope and features are evolving faster
+* This is valid for project releases but MUST also be used for our libraries and (reusable) modules
+
+== Why should you care ?
+
+* Proper version numbers and the way they are incremented have a meaning for all developers. 
+* Composer is the way to go to install your project dependencies.  You have to know the meaning of Semantic Versioning to configure your dependencies properly
+
+
+Full specification description: {url-semver}[semver.org]
