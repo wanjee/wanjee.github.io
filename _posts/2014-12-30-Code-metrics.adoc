@@ -1,0 +1,29 @@
+= Code metrics 
+:name: Wanjee
+:published_at: 2014-12-30
+:hp-tags: Quality, Drupal, Symfony2
+:url-phpmetrics: https://share.emakina.net/display/PHP/PhpMetrics
+:url-phpcpd: https://github.com/sebastianbergmann/phpcpd
+:url-phpdepend: http://pdepend.org/
+:url-phpmd: http://phpmd.org/
+
+
+
+== What to do ?
+
+Collect metrics about your project.  Easiest method is to use {url-phpmetrics}[PhpMetrics].  A bit of learning may be necessary to understand all the numbers it provides but it's worth the investment.
+
+A lot of other tools exists. 
+
+* {url-phpcpd}[PHPCPD] : copy/paste detector
+* {url-phpdepend}[PHP Depend] : collect code metrics
+* PHP Lint: Syntax check your code using php -l
+* {url-phpmd}[PHPMD] : Mess detector
+
+
+
+== Why is it important ?
+
+Code metrics provide you with a visual overview of the quality of the project you work on.  It allows you to detect "bad" code before it goes live.  It allows you to detect which parts of your code will probably cost you the most when the maintenance will start.
+
+Metrics snapshot should be taken automatically generated for each release.  They should also of course be communicated to the team.  Global code quality should be analysed regularly to ensure the quality does not lower on subsequent releases.
