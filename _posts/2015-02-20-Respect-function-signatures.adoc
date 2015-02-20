@@ -1,0 +1,51 @@
+= Respect function signatures
+:name: Wanjee
+:published_at: 2015-02-20
+:hp-tags: Quality,Drupal,Symfony2
+:url-hook-form-alter: https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_form_alter/7
+:url-hook-menu: https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_menu/7
+
+
+== What should you do ?
+
+When you implement a Drupal hook you should respect the naming defined by the initial implementation of the hook and/or by the documentation.  This is also valid for the returned value.
+
+Each implementation of a hook must therefore use the exact same names for all the function parameters.  A simple look at the code example in official documentation of hooks will provide you the best names to chose.
+
+=== Examples
+
+==== hook_form_alter
+
+This hook expects exactly 3 parameters.  You should use the exact same names
+----
+function hook_form_alter(&$form, &$form_state, $form_id) {
+    ...
+}
+----
+
+See {url-hook-form-alter}[Drupal hook_form_alter documentation]
+
+==== hook_menu
+
+No parameters here but notice the $items variable used in the implementation.  This is the one to use in any hook_menu implementation
+----
+function mymodule_menu() {
+  $items['abc/def'] = array(
+    'page callback' => 'mymodule_abc_view',
+  );
+  return $items;
+}
+----
+
+See {url-hook-menu}[Drupal hook_menu documentation]
+
+ 
+
+This is valid for any standard implementation, not only Drupal: *stick to conventions !*
+
+== Why should you care ?
+
+* Original developer took the time to carefully chose those parameter names. Why would you lose time to chose other names ?
+* Code is easier to read if developers share conventions.  This is a convention.
+* Code is easier to understand if developers share same dialect.
+
