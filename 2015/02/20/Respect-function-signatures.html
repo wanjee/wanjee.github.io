@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Respect function signatures - To quality and beyond</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Respect function signatures">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Respect function signatures">
+    <meta property="og:description" content="">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="http://wanjee.github.io/themes/uno/assets/css/uno.css?v=1.0.0" />
+
+    <link rel="canonical" href="http://wanjee.github.io/2015/02/20/Respect-function-signatures.html" />
+    
+    <meta property="og:site_name" content="To quality and beyond" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Respect function signatures" />
+    <meta property="og:description" content="What should you do ? When you implement a Drupal hook you should respect the naming defined by the initial implementation of the hook and/or by the documentation.  This is also valid for the returned value. Each implementation of a..." />
+    <meta property="og:url" content="http://wanjee.github.io/2015/02/20/Respect-function-signatures.html" />
+    <meta property="article:published_time" content="2015-02-19T23:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-02-20T13:21:11.161Z" />
+    <meta property="article:tag" content="Quality" />
+    <meta property="article:tag" content="Drupal" />
+    <meta property="article:tag" content="Symfony2" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Respect function signatures" />
+    <meta name="twitter:description" content="What should you do ? When you implement a Drupal hook you should respect the naming defined by the initial implementation of the hook and/or by the documentation.  This is also valid for the returned value. Each implementation of a..." />
+    <meta name="twitter:url" content="http://wanjee.github.io/2015/02/20/Respect-function-signatures.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "To quality and beyond",
+    "author": {
+        "@type": "Person",
+        "name": "",
+        "image": "https://avatars.githubusercontent.com/u/3372615?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": ""
+    },
+    "headline": "Respect function signatures",
+    "url": "http://wanjee.github.io/2015/02/20/Respect-function-signatures.html",
+    "datePublished": "2015-02-19T23:00:00.000Z",
+    "dateModified": "2015-02-20T13:21:11.161Z",
+    "keywords": "Quality, Drupal, Symfony2",
+    "description": "What should you do ? When you implement a Drupal hook you should respect the naming defined by the initial implementation of the hook and/or by the documentation.  This is also valid for the returned value. Each implementation of a..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="To quality and beyond" href="http://wanjee.github.io/rss" />
+
+</head>
+<body class="post-template tag-undefined tag-undefined tag-undefined no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed " >
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="http://wanjee.github.io" title="link to homepage for To quality and beyond"><img src="http://wanjee.be/blog/templates/wanjee/avatar.jpg" width="80" alt="To quality and beyond logo" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="http://wanjee.github.io" title="link to homepage for To quality and beyond">To quality and beyond</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">Quality focused small posts about PHP projects (Symfony, Drupal) and web development best practices in general.</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="/#blog" title="link to To quality and beyond blog" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+                  <!-- Twitter -->
+                  <li class="navigation__item">
+                    <a href="http://twitter.com/wanjee" title="Twitter account">
+                      <i class='icon icon-social-twitter'></i>
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+              
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="https://github.com/wanjee" title="Github account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  </li>
+              
+              
+              
+              
+                  <!-- LinkedIn -->
+                  <li class="navigation__item">
+                    <a href="http://be.linkedin.com/in/wanjee" title="LinkedIn account">
+                      <i class='icon icon-social-linkedin'></i>
+                      <span class="label">LinkedIn</span>
+                    </a>
+                  </li>
+              
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="20 Feb 2015" class="post-meta__date date">20 Feb 2015</time> &#8226; <span class="post-meta__tags tags">on <a href="http://wanjee.github.io/tag/Quality">Quality</a>, <a href="http://wanjee.github.io/tag/Drupal">Drupal</a>, <a href="http://wanjee.github.io/tag/Symfony2">Symfony2</a></span>
+        <span class="post-meta__author author"><img src="https://avatars.githubusercontent.com/u/3372615?v=3" alt="profile image for " class="avatar post-meta__avatar" /></span>
+      </div>
+      <h1 class="post-title">Respect function signatures</h1>
+    </header>
+
+    <section class="post tag-undefined tag-undefined tag-undefined">
+      <div class="sect1">
+<h2 id="_what_should_you_do">What should you do ?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you implement a Drupal hook you should respect the naming defined by the initial implementation of the hook and/or by the documentation.  This is also valid for the returned value.</p>
+</div>
+<div class="paragraph">
+<p>Each implementation of a hook must therefore use the exact same names for all the function parameters.  A simple look at the code example in official documentation of hooks will provide you the best names to chose.</p>
+</div>
+<div class="sect2">
+<h3 id="_examples">Examples</h3>
+<div class="sect3">
+<h4 id="_hook_form_alter">hook_form_alter</h4>
+<div class="paragraph">
+<p>This hook expects exactly 3 parameters.  You should use the exact same names</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>function hook_form_alter(&amp;$form, &amp;$form_state, $form_id) {
+    ...
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_form_alter/7">Drupal hook_form_alter documentation</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_hook_menu">hook_menu</h4>
+<div class="paragraph">
+<p>No parameters here but notice the $items variable used in the implementation.  This is the one to use in any hook_menu implementation</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>function mymodule_menu() {
+  $items['abc/def'] = array(
+    'page callback' =&gt; 'mymodule_abc_view',
+  );
+  return $items;
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See <a href="https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_menu/7">Drupal hook_menu documentation</a></p>
+</div>
+<div class="paragraph">
+<p>This is valid for any standard implementation, not only Drupal: <strong>stick to conventions !</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_should_you_care">Why should you care ?</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Original developer took the time to carefully chose those parameter names. Why would you lose time to chose other names ?</p>
+</li>
+<li>
+<p>Code is easier to read if developers share conventions.  This is a convention.</p>
+</li>
+<li>
+<p>Code is easier to understand if developers share same dialect.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+    </section>
+
+  </article>
+
+
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2015. All rights reserved.</span>
+                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
+                <span class="footer__copyright">Proudly published with <a href="http://hubpress.io" title="link to Hubpress website">Hubpress</a></span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
+
+    <script type="text/javascript" src="http://wanjee.github.io/themes/uno/assets/js/main.js?v=1.0.0"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-5555804-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
