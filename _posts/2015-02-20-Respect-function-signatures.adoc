@@ -28,6 +28,7 @@ See {url-hook-form-alter}[Drupal hook_form_alter documentation]
 ==== hook_menu
 
 No parameters here but notice the $items variable used in the implementation.  This is the one to use in any hook_menu implementation
+
 ----
 function mymodule_menu() {
   $items['abc/def'] = array(
