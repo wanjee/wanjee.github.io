@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Comment Driven Development - To quality and beyond</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Comment Driven Development">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Comment Driven Development">
+    <meta property="og:description" content="">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="http://blog.wanjee.be/themes/uno/assets/css/uno.css?v=1.0.0" />
+
+    <link rel="canonical" href="http://blog.wanjee.be/2015/03/09/Comment-Driven-Development.html" />
+    
+    <meta property="og:site_name" content="To quality and beyond" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Comment Driven Development" />
+    <meta property="og:description" content="How does it work ? 1. When implementing a new function start by a description of its behavior in plain language. /**  * Get list of jobs  *  * Fetch all published jobs  * ordered by their publication date, most recent are listed first.  * You can..." />
+    <meta property="og:url" content="http://blog.wanjee.be/2015/03/09/Comment-Driven-Development.html" />
+    <meta property="article:published_time" content="2015-03-08T23:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-03-09T14:44:32.280Z" />
+    <meta property="article:tag" content="Quality" />
+    <meta property="article:tag" content="Drupal" />
+    <meta property="article:tag" content="Symfony2" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Comment Driven Development" />
+    <meta name="twitter:description" content="How does it work ? 1. When implementing a new function start by a description of its behavior in plain language. /**  * Get list of jobs  *  * Fetch all published jobs  * ordered by their publication date, most recent are listed first.  * You can..." />
+    <meta name="twitter:url" content="http://blog.wanjee.be/2015/03/09/Comment-Driven-Development.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "To quality and beyond",
+    "author": {
+        "@type": "Person",
+        "name": "",
+        "image": "https://avatars.githubusercontent.com/u/3372615?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": ""
+    },
+    "headline": "Comment Driven Development",
+    "url": "http://blog.wanjee.be/2015/03/09/Comment-Driven-Development.html",
+    "datePublished": "2015-03-08T23:00:00.000Z",
+    "dateModified": "2015-03-09T14:44:32.280Z",
+    "keywords": "Quality, Drupal, Symfony2",
+    "description": "How does it work ? 1. When implementing a new function start by a description of its behavior in plain language. /**  * Get list of jobs  *  * Fetch all published jobs  * ordered by their publication date, most recent are listed first.  * You can..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="To quality and beyond" href="http://blog.wanjee.be/rss" />
+
+</head>
+<body class="post-template tag-undefined tag-undefined tag-undefined no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed " >
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="http://blog.wanjee.be" title="link to homepage for To quality and beyond"><img src="http://wanjee.be/blog/templates/wanjee/avatar.jpg" width="80" alt="To quality and beyond logo" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="http://blog.wanjee.be" title="link to homepage for To quality and beyond">To quality and beyond</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">Quality focused small posts about PHP projects (Symfony, Drupal) and web development best practices in general.</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="/#blog" title="link to To quality and beyond blog" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+                  <!-- Twitter -->
+                  <li class="navigation__item">
+                    <a href="http://twitter.com/wanjee" title="Twitter account">
+                      <i class='icon icon-social-twitter'></i>
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+              
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="https://github.com/wanjee" title="Github account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  </li>
+              
+              
+              
+              
+                  <!-- LinkedIn -->
+                  <li class="navigation__item">
+                    <a href="http://be.linkedin.com/in/wanjee" title="LinkedIn account">
+                      <i class='icon icon-social-linkedin'></i>
+                      <span class="label">LinkedIn</span>
+                    </a>
+                  </li>
+              
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="09 Mar 2015" class="post-meta__date date">09 Mar 2015</time> &#8226; <span class="post-meta__tags tags">on <a href="http://blog.wanjee.be/tag/Quality">Quality</a>, <a href="http://blog.wanjee.be/tag/Drupal">Drupal</a>, <a href="http://blog.wanjee.be/tag/Symfony2">Symfony2</a></span>
+        <span class="post-meta__author author"><img src="https://avatars.githubusercontent.com/u/3372615?v=3" alt="profile image for " class="avatar post-meta__avatar" /></span>
+      </div>
+      <h1 class="post-title">Comment Driven Development</h1>
+    </header>
+
+    <section class="post tag-undefined tag-undefined tag-undefined">
+      <div class="sect1">
+<h2 id="_how_does_it_work">How does it work ?</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_1_when_implementing_a_new_function_start_by_a_description_of_its_behavior_in_plain_language">1. When implementing a new function start by a description of its behavior in plain language.</h3>
+<div class="listingblock">
+<div class="content">
+<pre>/**
+ * Get list of jobs
+ *
+ * Fetch all published jobs
+ * ordered by their publication date, most recent are listed first.
+ * You can alter this behavior by passing options
+ *
+ */
+function getJobList() {
+}</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_also_add_description_of_parameters_if_any_and_returned_value">2. Also add description of parameters, if any, and returned value.</h3>
+<div class="listingblock">
+<div class="content">
+<pre>/**
+ * Get list of jobs
+ *
+ * Fetch all published jobs
+ * ordered by their publication date, most recent are listed first
+ * You can alter this behavior by passing specific filters as arguments.
+ * A filter is a job field name having a given value
+ * i.e. $filters = array('locale' =&gt; 'AR')
+ *
+ * @param array $filters List of arguments to filter the list on.
+ * @return array Filtered and ordered list of jobs.
+ */
+function getJobList($filters = array()) {
+}</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_then_describe_the_internal_logic_of_your_function_as_plain_language_again_in_comments">3. Then describe the internal logic of your function, as plain language again, in comments</h3>
+<div class="listingblock">
+<div class="content">
+<pre>/**
+ * Get list of jobs
+ *
+ * Fetch all published jobs
+ * ordered by their publication date, most recent are listed first
+ * You can alter this behavior by passing specific filters as arguments.
+ * A filter is a job field name having a given value
+ * i.e. $filters = array('locale' =&gt; 'AR')
+ *
+ * @param array $filters List of arguments to filter the list on.
+ * @return array Filtered and ordered list of jobs.
+ */
+function getJobList($filters = array) {
+    // Ensure filters are valid
+
+    // Ensure default filters are always set
+
+    // Build the query
+
+    // Loop through results
+
+    // Return prepared jobs
+}</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_last_step_is_filling_the_blanks_with_your_code">4. Last step is filling the blanks with your code.</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_5_repeat_for_next_function">5. Repeat for next function</h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_it_s_important">Why it&#8217;s important ?</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Comments are important for maintenance of applications, for your colleagues but also for you.</p>
+</li>
+<li>
+<p>Describing your application logic is more natural in plain language than in PHP, you don&#8217;t have to take care of the syntax of exact function to call.  It&#8217;s therefore more fluent.</p>
+</li>
+<li>
+<p>Once comments are written you get the whole picture of what you want to achieve, you can now focus on how to properly write the corresponding PHP/JS/whatever code</p>
+</li>
+<li>
+<p>Once code is written you don&#8217;t have to comment it, it&#8217;s already done ! (You should still consider a proof reading of all comments)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+    </section>
+
+  </article>
+
+
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2015. All rights reserved.</span>
+                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
+                <span class="footer__copyright">Proudly published with <a href="http://hubpress.io" title="link to Hubpress website">Hubpress</a></span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
+
+    <script type="text/javascript" src="http://blog.wanjee.be/themes/uno/assets/js/main.js?v=1.0.0"></script>
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-5555804-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
