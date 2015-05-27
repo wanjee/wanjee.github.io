@@ -1,7 +1,7 @@
 = Composer
 :name: Wanjee
 :published_at: 2015-05-25
-:hp-tags: Quality,Drupal,Symfony2
+:hp-tags: Quality,Symfony2
 :url-composer-official: https://getcomposer.org/doc/00-intro.md
 :url-composer-tips: http://www.sitepoint.com/mastering-composer-tips-tricks/
 
