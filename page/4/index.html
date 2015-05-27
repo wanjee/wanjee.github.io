@@ -25,12 +25,13 @@
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
-    <link rel="stylesheet" type="text/css" href="http://blog.wanjee.be/themes/uno/assets/css/uno.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//blog.wanjee.be/themes/uno/assets/css/uno.css?v=1.0.0" />
 
     <link rel="canonical" href="http://blog.wanjee.be" />
     <link rel="prev" href="http://blog.wanjee.be/page/3/" />
     <meta name="generator" content="Ghost ?" />
     <link rel="alternate" type="application/rss+xml" title="To quality and beyond" href="http://blog.wanjee.be/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
 
 </head>
 <body class="home-template no-js">
@@ -56,7 +57,7 @@
     
               <nav class="cover-navigation cover-navigation--primary">
                 <ul class="navigation">
-                  <li class="navigation__item"><a href="/#blog" title="link to To quality and beyond blog" class="blog-button">Blog</a></li>
+                  <li class="navigation__item"><a href="http://blog.wanjee.be/#blog" title="link to To quality and beyond blog" class="blog-button">Blog</a></li>
                 </ul>
               </nav>
     
@@ -109,6 +110,7 @@
         <div class="panel-cover--overlay"></div>
       </div>
     </header>
+
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
             
@@ -116,15 +118,21 @@
 
     <ol class="post-list">
       <li>
+        <h2 class="post-list__post-title post-title"><a href="http://blog.wanjee.be/2014/05/06/Source-repository-usage.html" title="link to Source repository usage">Source repository usage</a></h2>
+        <p class="excerpt">Topic of the day: Source repository usage What to do ? Create a "www" folder in trunk root in which your project files will be located In "www" you should have nothing else than your project files and code (no db backup, no tmp folder,…) Custom code is separated from contrib&hellip;</p>
+        <div class="post-list__meta"><time datetime="06 May 2014" class="post-list__meta--date date">06 May 2014</time> &#8226; <span class="post-list__meta--tags tags">on <a href="http://blog.wanjee.be/tag/Quality">Quality</a>, <a href="http://blog.wanjee.be/tag/Drupal">Drupal</a>, <a href="http://blog.wanjee.be/tag/Symfony2">Symfony2</a></span></div>
+        <hr class="post-list__divider" />
+      </li>
+      <li>
         <h2 class="post-list__post-title post-title"><a href="http://blog.wanjee.be/2014/04/30/Coding-rules.html" title="link to Coding rules">Coding rules</a></h2>
         <p class="excerpt">What to do ? Whatever the framework or CMS we use we will apply the coding standards provided by their developers. Drupal: http://drupal.org/coding-standards Symfony: http://symfony.com/doc/master/contributing/code/standards.html Other PHP libraries: http://www.php-fig.org/psr/psr-2/ So depending on the project you&hellip;</p>
-        <div class="post-list__meta"><time datetime="30 Apr 2014" class="post-list__meta--date date">30 Apr 2014</time> &#8226; <span class="post-list__meta--tags tags">on <a href="http://blog.wanjee.be/tag/Quality">Quality</a>, <a href="http://blog.wanjee.be/tag/ Drupal"> Drupal</a>, <a href="http://blog.wanjee.be/tag/ Symfony2"> Symfony2</a></span></div>
+        <div class="post-list__meta"><time datetime="30 Apr 2014" class="post-list__meta--date date">30 Apr 2014</time> &#8226; <span class="post-list__meta--tags tags">on <a href="http://blog.wanjee.be/tag/Quality">Quality</a>, <a href="http://blog.wanjee.be/tag/Drupal"> Drupal</a>, <a href="http://blog.wanjee.be/tag/Symfony2"> Symfony2</a></span></div>
         <hr class="post-list__divider" />
       </li>
       <li>
         <h2 class="post-list__post-title post-title"><a href="http://blog.wanjee.be/2014/04/23/Coder-module.html" title="link to Coder module">Coder module</a></h2>
         <p class="excerpt">What to do ? First install and enable the coder module on your dev environment.  This module should be packaged in your site codebase so that automated testing can use it but they should not be active on staging or production. Then run it from Drupal backend or (more efficient) via&hellip;</p>
-        <div class="post-list__meta"><time datetime="23 Apr 2014" class="post-list__meta--date date">23 Apr 2014</time> &#8226; <span class="post-list__meta--tags tags">on <a href="http://blog.wanjee.be/tag/Quality">Quality</a>, <a href="http://blog.wanjee.be/tag/ Drupal"> Drupal</a></span></div>
+        <div class="post-list__meta"><time datetime="23 Apr 2014" class="post-list__meta--date date">23 Apr 2014</time> &#8226; <span class="post-list__meta--tags tags">on <a href="http://blog.wanjee.be/tag/Quality">Quality</a>, <a href="http://blog.wanjee.be/tag/Drupal"> Drupal</a></span></div>
         <hr class="post-list__divider" />
       </li>
       <li>
@@ -153,9 +161,20 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
 
-    <script type="text/javascript" src="http://blog.wanjee.be/themes/uno/assets/js/main.js?v=1.0.0"></script>
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//blog.wanjee.be/themes/uno/assets/js/main.js?v=1.0.0"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
