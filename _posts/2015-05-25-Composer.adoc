@@ -1,0 +1,65 @@
+= Composer
+:name: Wanjee
+:published_at: 2015-05-25
+:hp-tags: Quality,Drupal,Symfony2
+:url-composer-official: https://getcomposer.org/doc/00-intro.md
+:url-composer-tips: http://www.sitepoint.com/mastering-composer-tips-tricks/
+
+
+== What is Composer ?
+
+Composer is a dependency manager for PHP.  It is to PHP what npm is to NodeJS and what Bower is to front-end javascript. 
+
+Add a dependency in the composer.json file and composer will take care of installing and updating it. It is used by most PHP projects like Symfony2, Silex, Laravel, Drupal8 (partially...).  It mostly relies on Packagist to retrieve dependencies information and to allow download of them.  Packagist is the main Composer repository.  It does not hold any code but aggregates content from public source control systems like Github.  Internally we do not use Github to host anything but Composer let you define other repositories so it will be able to retrieve dependencies on our internal Git.
+
+
+== Understanding versions
+
+Composer relies on Semantic versioning to know which version it needs to get.
+
+Adding a requirement is like the following example:
+
+----
+{
+    "require": {
+        "monolog/monolog": "1.0.*"
+    }
+}
+----
+
+* "monolog/monolog" is the package name, as found on Packagist.
+* "1.0.*" is the version constraint.  Read more about version constraints in official documentation.  It's a bit tricky at first but it is really powerful.  (warning) It is really important to master this as you need to ensure you are not trying to get major revision of your dependencies at a wrong time.  Please remember that a MAJOR version will almost always add incompatible API changes.
+
+
+== Main commands
+
+----
+$ composer install
+----
+
+If composer.lock file exists it will read it and install exact same versions as defined in that file.  If it does not exist it will read composer.json file, figure out what are the exact versions to install, install them and write the composer.lock file
+
+----
+$ composer update
+----
+
+Install dependencies from composer.json file and creates or updates the composer.lock file.
+
+So basically:
+
+* Use install to get the current project state dependencies
+* Use update to update the project dependencies to the latest valid version
+
+== A note about versioning
+
+Similarly to Grunt or Bower you will not have to commit the dependencies as Composer will retrieve everything when you start working on a new project.  So to ensure other developers gets the exact same dependencies as you you will have to commit the composer.lock file.
+
+
+== Why should I care ?
+
+Modern projects use Composer.  We do modern projects.
+
+== Useful links
+
+* {url-composer-official}[Composer official documentation]
+* {url-composer-tips}[Mastering Composer : tips & tricks]
