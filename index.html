@@ -25,12 +25,13 @@
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
-    <link rel="stylesheet" type="text/css" href="http://blog.wanjee.be/themes/uno/assets/css/uno.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//blog.wanjee.be/themes/uno/assets/css/uno.css?v=1.0.0" />
 
     <link rel="canonical" href="http://blog.wanjee.be" />
     <link rel="next" href="http://blog.wanjee.be/page/2/" />
     <meta name="generator" content="Ghost ?" />
     <link rel="alternate" type="application/rss+xml" title="To quality and beyond" href="http://blog.wanjee.be/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
 
 </head>
 <body class="home-template no-js">
@@ -56,7 +57,7 @@
     
               <nav class="cover-navigation cover-navigation--primary">
                 <ul class="navigation">
-                  <li class="navigation__item"><a href="/#blog" title="link to To quality and beyond blog" class="blog-button">Blog</a></li>
+                  <li class="navigation__item"><a href="http://blog.wanjee.be/#blog" title="link to To quality and beyond blog" class="blog-button">Blog</a></li>
                 </ul>
               </nav>
     
@@ -109,12 +110,19 @@
         <div class="panel-cover--overlay"></div>
       </div>
     </header>
+
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
             
   <div class="main-post-list">
 
     <ol class="post-list">
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="http://blog.wanjee.be/2015/05/25/Composer.html" title="link to Composer">Composer</a></h2>
+        <p class="excerpt">What is Composer ? Composer is a dependency manager for PHP.  It is to PHP what npm is to NodeJS and what Bower is to front-end javascript. Add a dependency in the composer.json file and composer will take care of installing and updating it. It is used by most PHP&hellip;</p>
+        <div class="post-list__meta"><time datetime="25 May 2015" class="post-list__meta--date date">25 May 2015</time> &#8226; <span class="post-list__meta--tags tags">on <a href="http://blog.wanjee.be/tag/Quality">Quality</a>, <a href="http://blog.wanjee.be/tag/Drupal">Drupal</a>, <a href="http://blog.wanjee.be/tag/Symfony2">Symfony2</a></span></div>
+        <hr class="post-list__divider" />
+      </li>
       <li>
         <h2 class="post-list__post-title post-title"><a href="http://blog.wanjee.be/2015/03/09/Comment-Driven-Development.html" title="link to Comment Driven Development">Comment Driven Development</a></h2>
         <p class="excerpt">Comments are as useful as boring to write.  But they are mandatory.  Let me introduce you this programming methodology: Comment Driven Development. How does it work ? 1. When implementing a new function start by a description of its behavior in plain language. /**  * Get list of jobs  *  * Fetch all published jobs&hellip;</p>
@@ -139,12 +147,6 @@
         <div class="post-list__meta"><time datetime="30 Dec 2014" class="post-list__meta--date date">30 Dec 2014</time> &#8226; <span class="post-list__meta--tags tags">on <a href="http://blog.wanjee.be/tag/Quality">Quality</a>, <a href="http://blog.wanjee.be/tag/Drupal">Drupal</a>, <a href="http://blog.wanjee.be/tag/Symfony2">Symfony2</a></span></div>
         <hr class="post-list__divider" />
       </li>
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="http://blog.wanjee.be/2014/08/28/Ask-lead-dev-first.html" title="link to Ask lead dev first !">Ask lead dev first !</a></h2>
-        <p class="excerpt">What to do ? We all know how the planning works.  We are often asked to develop new features or fix bugs on project we do not start.  Problem is that we therefore do not know how those projects foundations are and we make assumptions.  If the assumptions are not correct&hellip;</p>
-        <div class="post-list__meta"><time datetime="28 Aug 2014" class="post-list__meta--date date">28 Aug 2014</time> &#8226; <span class="post-list__meta--tags tags">on <a href="http://blog.wanjee.be/tag/Quality">Quality</a>, <a href="http://blog.wanjee.be/tag/ Drupal"> Drupal</a>, <a href="http://blog.wanjee.be/tag/ Symfony2"> Symfony2</a></span></div>
-        <hr class="post-list__divider" />
-      </li>
     </ol>
 
     <hr class="post-list__divider " />
@@ -165,9 +167,20 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
 
-    <script type="text/javascript" src="http://blog.wanjee.be/themes/uno/assets/js/main.js?v=1.0.0"></script>
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//blog.wanjee.be/themes/uno/assets/js/main.js?v=1.0.0"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
